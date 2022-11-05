@@ -1,0 +1,214 @@
+.CodeEditor-container {
+    margin: 0;
+    background-color: var(--ce-primary-bg);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.codeEditor-navbar-container {
+    color: var(--ce-primary-text);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.codeEditor-navbar-heading {
+    font-size: 2rem;
+}
+
+.codeEditor-navbar-link-item {
+    font-size: 1.3rem;
+    color: var(--ce-primary-text);
+    margin: 0 40px;
+}
+
+.codeEditor-navbar-link-item:hover {
+    text-decoration: underline;
+    color: var(--ce-secondary-text);
+}
+
+
+.codeEditor-joinForm-container {
+    display: flex;
+    padding: 25px;
+}
+
+@media only screen and (max-width: 550px) {
+    .codeEditor-joinForm-container {
+      flex-direction: column-reverse;
+    }
+    .JoinFormImage {
+        display: none;
+    }
+  }
+.JoinFormImage {
+    flex: 50%;
+    width: 40vw;
+}
+
+.codeEditor-joinForm {
+    flex:50%;
+    /* border: 1px solid white; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.codeEditor-joinForm-heading {
+    display: flex;
+    align-items: center;
+    color: var(--ce-primary-text);
+    gap: 10px;
+    font-size: 2.2rem;
+}
+
+.codeEditor-icon {
+    color: turquoise;
+}
+
+.codeEditor-joinForm-subheading {
+    color: turquoise;
+}
+
+.codeEditor-joinForm-roomID ,
+.codeEditor-joinForm-username{
+    border: 0.8px solid transparent;
+    /* font-size: 0.8rem; */
+    font-weight: bold;
+    width: 60%;
+    padding: 8px;
+    margin: 10px 0;
+}
+input:focus {
+    outline: none;
+}
+
+.codeEditor-joinForm-joinNow {
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    background-color: transparent;
+    color: turquoise;
+    cursor: pointer;
+    border: 1px solid turquoise;
+}
+
+.codeEditor-joinForm-joinNow:hover {
+    background-color: turquoise;
+    color: var(--ce-primary-bg);
+}
+
+.codeEditor-joinForm-createID {
+    color: turquoise;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.codeEditor-joinForm-createID:hover {
+    text-decoration: underline;
+    color: rgba(64, 224, 208, 0.678);
+}
+
+.codeEditor-footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--ce-primary-text);
+    padding: 10px;
+    bottom: 1;
+}
+
+.codeEditor-footer a {
+    color: turquoise;
+}
+
+.codeEditor-footer a:hover {
+    text-decoration: underline;
+    color: rgba(64, 224, 208, 0.678);
+}
+
+.editorPage-container {
+    padding: 10px;
+    display: flex;
+}
+
+.editorPage-info {
+    max-width: 160px;
+    min-height: 100vh;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.editorPage-info-heading {
+    display: flex;
+    align-items: center;
+    color: var(--ce-primary-text);
+    font-size: 1.4rem;
+}
+
+.editorPage-info-users {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.editorPage-info-userItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 7px;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--ce-secondary-text);
+    width: 65px;
+    font-size: 0.55rem;
+    overflow: hidden;
+}
+
+.editorPage-info-functionButtons {
+    color: var(--ce-secondary-bg);
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.editorPage-info-functionButtons button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 4px;
+    border: 1px solid turquoise;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#copyRoom {
+    background-color:transparent;
+    color: turquoise;
+}
+#leaveRoom {
+    background-color:turquoise;
+    color: var(--ce-secondary-bg);
+}
+
+#editorPage-codePart {
+    padding: 5px 15px;
+    color: var(--ce-secondary-bg);
+    background-color: #272822;
+}
+
+.CodeMirror {
+    margin-left: 25px;
+    width: 75%;
+    font-size: 1rem;
+    min-height: 400px;
+}

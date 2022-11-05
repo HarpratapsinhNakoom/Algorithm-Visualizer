@@ -1,0 +1,18 @@
+.pathfinding-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pathfinding-matrix {
+    margin: 40px 0;
+}
+.pathfinding-matrix-row {
+    display: flex;
+}
+
+.matrix-cell {
+    height: 20px;
+    width: 20px;
+    /* background-color: aqua; */
+    border: 1px solid black;
+}
