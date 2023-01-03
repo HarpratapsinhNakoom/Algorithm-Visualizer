@@ -23,10 +23,12 @@ export default function EditorPage() {
   return (
     <div className='editorPage-container'>
         <div className="editorPage-info">
-          <div className="editorPage-info-heading">
-          <FaRegHandshake className='codeEditor-icon'/>Code Merge
+          <div>
+            <div className="editorPage-info-heading">
+            <FaRegHandshake className='codeEditor-icon'/>Code Merge
+            </div>
+            <div className="editorPage-info-users">{showUsers}</div>
           </div>
-          <div className="editorPage-info-users">{showUsers}</div>
           <div className="editorPage-info-functionButtons">
             <button id='copyRoom'>Copy Room ID</button>
             <button id='leaveRoom'>Leave Room</button>

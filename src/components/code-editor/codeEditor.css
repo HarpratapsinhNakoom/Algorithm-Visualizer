@@ -137,11 +137,11 @@ input:focus {
 .editorPage-container {
     padding: 10px;
     display: flex;
+    width: 100vw;
 }
 
 .editorPage-info {
-    max-width: 160px;
-    min-height: 100vh;
+    width: 200px;
     padding: 5px 15px;
     display: flex;
     flex-direction: column;
